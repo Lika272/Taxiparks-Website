@@ -1,0 +1,130 @@
+html {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
+}
+
+img,
+button {
+  cursor: pointer;
+}
+
+/* || Typography */
+h3 {
+  color: var(--Basic-700, #2e3a59);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+/*|| Registration */
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+}
+
+.section__content {
+  display: flex;
+  background: #fff;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 33px -15px rgba(255, 255, 255, 1);
+}
+
+.section__content--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 30px;
+}
+
+.inputs__heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.section__content--inputs h4 {
+  color: #252733;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.section__content--inputs span:first-of-type {
+  color: #9fa2b4;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+label {
+  color: #101010;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#number,
+#password {
+  border-radius: 8px;
+  border: 1px solid #101010;
+  background: #fcfdfe;
+  padding: 11px 0px 14px 16px;
+}
+
+#submit {
+  border-radius: 8px;
+  background: #101010;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  border-style: none;
+  padding: 15px 0px 17px 0px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+#submit > a:visited {
+  color: #fff;
+}
+
+#submit:hover {
+  background-image: url("../photos/loading.png");
+  background-repeat: no-repeat;
+  background-position: left 110px center;
+  background-size: 20px;
+}
+
+span > a {
+  color: #101010;
+}

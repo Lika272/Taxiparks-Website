@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Taxiparks" />
+    <meta name="author" content="Lika" />
+    <link rel="icon" href="photos/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/drivers.css" />
+    <title>Taxiparks Website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <div class="sidebar">
+          <div class="sidebar__user">
+            <div class="sidebar__user--img">
+              <img src="photos/samantha.svg" alt="user" />
+            </div>
+            <div class="sidebar__user--info">
+              <span>Samantha</span>
+              <span>+998 (99) 436-46-15</span>
+            </div>
+          </div>
+
+          <nav>
+            <span>MAIN MENU</span>
+
+            <ul>
+              <li>
+                <img src="photos/home.svg" alt="dashboard" />
+                <a href="dashboard.html">Dashboard</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/emojione-monotone_bookmark-tabs.svg"
+                  alt="orders"
+                />
+                <a href="orders.html">Orders</a>
+              </li>
+
+              <li>
+                <img src="photos/rides.svg" alt="rides" />
+                <a href="rides.html">Rides</a>
+              </li>
+
+              <li>
+                <img src="photos/people.svg" alt="people" />
+                <a href="clients.html">Clients</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/coloredhealthicons_truck-driver.svg"
+                  alt="drivers"
+                />
+                <a id="selected" href="drivers.html">Drivers</a>
+              </li>
+
+              <li>
+                <img src="photos/dashicons_money-alt.svg" alt="shift" />
+                <a href="shift.html">Shift</a>
+              </li>
+
+              <li>
+                <img src="photos/wpf_worldwide-location.svg" alt="map" />
+                <a href="map.html">Live map</a>
+              </li>
+
+              <li>
+                <img src="photos/fa-solid_car.svg" alt="car" />
+                <a href="car.html">Car classes</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/ant-design_branches-outlined.svg"
+                  alt="branches"
+                />
+                <a href="branches.html">Branches</a>
+              </li>
+
+              <li>
+                <img src="photos/profile-2user.svg" alt="moderators" />
+                <a href="moderators.html">Moderators</a>
+              </li>
+
+              <li>
+                <img src="photos/setting-4.svg" alt="setting" />
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="main__content">
+        <div class="main__content--background">
+          <div class="info">
+            <div class="info__hamburger">
+              <div>
+                <img src="photos/menu.svg" alt="menu" />
+                <span>Good morning, <i>M</i>aharram 👋</span>
+                <span>you have <a href="#">1 new message</a></span>
+              </div>
+
+              <a href="index.html"><img src="photos/exit.svg" alt="exit" /></a>
+            </div>
+
+            <main>
+              <div class="drivers">
+                <div class="drivers__container">
+                  <h3>Drivers list</h3>
+                  <input type="text" id="text" placeholder="Search by Name" />
+                </div>
+
+                <div class="drivers__select">
+                  <a href="drivers2.html">
+                    <img src="photos/fluent_live-24-regular.svg" alt="live" />
+                  </a>
+                  <div>
+                    <select id="driver" name="driver">
+                      <option value="all">All driver</option>
+                      <option value="free">Free Driver</option>
+                      <option value="Vip">VIP Driver</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="table__container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="checkbox" /></th>
+                      <th>First name</th>
+                      <th>Last Name</th>
+                      <th>Birthdate</th>
+                      <th>State</th>
+                      <th>Home location</th>
+                      <th>Work location</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td>Sierra</td>
+                    <td>Ferguson</td>
+                    <td>9/5/1990</td>
+                    <td>Created</td>
+                    <td>+998 (99) 436-46-15</td>
+                    <td><button>some time ago</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td>Nathaniel</td>
+                    <td>Lawrence</td>
+                    <td>6/5/1973</td>
+                    <td>Active</td>
+                    <td>+998 (99) 436-46-15</td>
+                    <td><button class="btn--red">1 months ago</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td>Alberto</td>
+                    <td>Daniels</td>
+                    <td>11/4/1964</td>
+                    <td>Created</td>
+                    <td>+998 (99) 436-46-15</td>
+                    <td><button>3 days ago</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td>Mary</td>
+                    <td>Mills</td>
+                    <td>11/3/1963</td>
+                    <td>Active</td>
+                    <td>+998 (99) 436-46-15</td>
+                    <td><button>some time ago</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td>Bessie</td>
+                    <td>Spencer</td>
+                    <td>1/2/1949</td>
+                    <td>Active</td>
+                    <td>+998 (99) 436-46-15</td>
+                    <td><button class="btn--red">2 weeks ago</button></td>
+                  </tr>
+                </table>
+
+                <div class="table__switch">
+                  <div class="switch__total">
+                    <span
+                      >Total users: 98 &#160; &#160; &#160; Active drivers:
+                      9</span
+                    >
+                  </div>
+
+                  <div class="switch__slide">
+                    <span>1-2 of items</span>
+                    <div class="bond--elements">
+                      <div>
+                        <img src="photos/chevron-left.svg" alt="chevron-left" />
+                      </div>
+                      <button>1</button>
+                      <button>2</button>
+                      <div>
+                        <img
+                          src="photos/chevron-right.svg"
+                          alt="chevron-right"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

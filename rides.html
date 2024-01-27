@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Taxiparks" />
+    <meta name="author" content="Lika" />
+    <link rel="icon" href="photos/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/rides.css" />
+    <title>Taxiparks Website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <div class="sidebar">
+          <div class="sidebar__user">
+            <div class="sidebar__user--img">
+              <img src="photos/samantha.svg" alt="user" />
+            </div>
+            <div class="sidebar__user--info">
+              <span>Samantha</span>
+              <span>+998 (99) 436-46-15</span>
+            </div>
+          </div>
+
+          <nav>
+            <span>MAIN MENU</span>
+
+            <ul>
+              <li>
+                <img src="photos/home.svg" alt="dashboard" />
+                <a href="dashboard.html">Dashboard</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/emojione-monotone_bookmark-tabs.svg"
+                  alt="orders"
+                />
+                <a href="orders.html">Orders</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/mdi_account-clock-outlineColoured.svg"
+                  alt="rides"
+                />
+                <a id="selected" href="rides.html">Rides</a>
+              </li>
+
+              <li>
+                <img src="photos/people.svg" alt="people" />
+                <a href="clients.html">Clients</a>
+              </li>
+
+              <li>
+                <img src="photos/healthicons_truck-driver.svg" alt="drivers" />
+                <a href="drivers.html">Drivers</a>
+              </li>
+
+              <li>
+                <img src="photos/dashicons_money-alt.svg" alt="shift" />
+                <a href="shift.html">Shift</a>
+              </li>
+
+              <li>
+                <img src="photos/wpf_worldwide-location.svg" alt="map" />
+                <a href="map.html">Live map</a>
+              </li>
+
+              <li>
+                <img src="photos/fa-solid_car.svg" alt="car" />
+                <a href="car.html">Car classes</a>
+              </li>
+
+              <li>
+                <img
+                  src="photos/ant-design_branches-outlined.svg"
+                  alt="branches"
+                />
+                <a href="branches.html">Branches</a>
+              </li>
+
+              <li>
+                <img src="photos/profile-2user.svg" alt="moderators" />
+                <a href="moderators.html">Moderators</a>
+              </li>
+
+              <li>
+                <img src="photos/setting-4.svg" alt="setting" />
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="main__content">
+        <div class="main__content--background">
+          <div class="info">
+            <div class="info__hamburger">
+              <div>
+                <img src="photos/menu.svg" alt="menu" />
+                <span>Good morning, <i>M</i>aharram 👋</span>
+                <span>you have <a href="#">1 new message</a></span>
+              </div>
+
+              <a href="index.html"><img src="photos/exit.svg" alt="exit" /></a>
+            </div>
+
+            <main>
+              <div class="scrollmenu">
+                <a id="activelink" href="rides2.html">Pending (5)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">In progress (1)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">Completed (70)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">Upcoming (0)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">Pre cancelled (26)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">Cancelled by driver (1)</a>
+                <img src="photos/chevron-right.svg" alt="chevron-right" />
+                <a href="rides2.html">Finished (5)</a>
+              </div>
+
+              <div class="table__container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="checkbox" /></th>
+                      <th id="user">User</th>
+                      <th>Car Comfort</th>
+                      <th id="time">Ordered Time</th>
+                      <th>Start location</th>
+                      <th>Finish location</th>
+                      <th>Income</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td class="table--user">
+                      <img src="photos/profile_photo.svg" alt="profile_photo" />
+                      <div>
+                        <h5>Sierra Ferguson</h5>
+                        <span>+998 (99) 436-46-15</span>
+                      </div>
+                    </td>
+                    <td>simple</td>
+                    <td>04.12.2021 20:30</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td><button>50 300 000 SUM</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td class="table--user">
+                      <img src="photos/profile_photo.svg" alt="profile_photo" />
+                      <div>
+                        <h5>Sierra Ferguson</h5>
+                        <span>+998 (99) 436-46-15</span>
+                      </div>
+                    </td>
+                    <td>convenient</td>
+                    <td>04.12.2021 20:30</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td><button>50 300 000 SUM</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td class="table--user">
+                      <img src="photos/profile_photo.svg" alt="profile_photo" />
+                      <div>
+                        <h5>Sierra Ferguson</h5>
+                        <span>+998 (99) 436-46-15</span>
+                      </div>
+                    </td>
+                    <td>simple</td>
+                    <td>04.12.2021 20:30</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td><button>50 300 000 SUM</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td class="table--user">
+                      <img src="photos/profile_photo.svg" alt="profile_photo" />
+                      <div>
+                        <h5>Sierra Ferguson</h5>
+                        <span>+998 (99) 436-46-15</span>
+                      </div>
+                    </td>
+                    <td>convenient</td>
+                    <td>04.12.2021 20:30</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td><button>50 300 000 SUM</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="checkbox" /></td>
+                    <td class="table--user">
+                      <img src="photos/profile_photo.svg" alt="profile_photo" />
+                      <div>
+                        <h5>Sierra Ferguson</h5>
+                        <span>+998 (99) 436-46-15</span>
+                      </div>
+                    </td>
+                    <td>convenient</td>
+                    <td>04.12.2021 20:30</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td>пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston</td>
+                    <td><button>50 300 000 SUM</button></td>
+                  </tr>
+                </table>
+
+                <div class="table__switch">
+                  <span>1-2 of items</span>
+                  <div class="bond--elements">
+                    <div>
+                      <img src="photos/chevron-left.svg" alt="chevron-left" />
+                    </div>
+                    <button>1</button>
+                    <button>2</button>
+                    <div>
+                      <img src="photos/chevron-right.svg" alt="chevron-right" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
